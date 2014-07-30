@@ -25,7 +25,6 @@ RUN v=1.7.3; curl -sL http://nginx.org/download/nginx-$v.tar.gz | tar xz && cd n
       --with-http_random_index_module \
       --with-http_secure_link_module \
       --with-http_stub_status_module && make && make install
-ADD nginx.conf /usr/local/nginx/conf/nginx.conf
 ENV PATH /usr/local/nginx/sbin:$PATH
 
 EXPOSE 80
